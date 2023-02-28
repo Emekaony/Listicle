@@ -1,15 +1,16 @@
 {
-  "name": "awesomeproject",
+  "name": "backend",
   "version": "1.0.0",
-  "description": "Root folder",
+  "description": "Backend for app",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run ios\""
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "Nnaemeka Onyeokoro",
   "license": "MIT",
   "devDependencies": {
-    "concurrently": "^7.6.0"
+    "nodemon": "^2.0.20"
   }
 }
