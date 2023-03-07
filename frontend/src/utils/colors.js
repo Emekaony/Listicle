@@ -1,3 +1,5 @@
+// store common app colors so we don't repeat ourselves
+
 export const colors = {
   blue: "#4F63AC",
   white: "#FFFFFF",
