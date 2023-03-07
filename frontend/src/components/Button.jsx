@@ -3,12 +3,13 @@ import { Pressable, StyleSheet, Text } from "react-native";
 
 import { colors } from "../utils/colors";
 
-const Button = ({ title, onPress }) => {
+const Button = ({ title, onPress, style }) => {
   return (
     <Pressable
       style={({ pressed }) => [
         styles.container,
         pressed && styles.pressedStyle,
+        style,
       ]}
       onPress={onPress}
     >
