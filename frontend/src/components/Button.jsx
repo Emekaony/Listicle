@@ -4,6 +4,7 @@ import { Pressable, StyleSheet, Text } from "react-native";
 import { colors } from "../utils/colors";
 
 const Button = ({ title, onPress, style }) => {
+  console.log("inside the button");
   return (
     <Pressable
       style={({ pressed }) => [
@@ -37,4 +38,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Button;
+export default React.memo(Button);
