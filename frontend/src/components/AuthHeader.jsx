@@ -35,4 +35,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default AuthHeader;
+export default React.memo(AuthHeader);
