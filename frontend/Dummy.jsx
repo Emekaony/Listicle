@@ -9,4 +9,4 @@ const styles = StyleSheet.create({
   container: {},
 });
 
-export default Dummy;
+export default React.memo(Dummy);

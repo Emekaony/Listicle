@@ -15,6 +15,7 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.shadon.listicle",
       "supportsTablet": true
     },
     "android": {
