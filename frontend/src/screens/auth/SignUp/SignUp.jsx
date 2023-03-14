@@ -15,8 +15,9 @@ import Button from "../../../components/Button";
 import Separator from "../../../components/Separator";
 import GoogleLogin from "../../../components/GoogleLogin";
 
-const SignUp = () => {
+const SignUp = ({ googleOnPress }) => {
   const [checked, setChecked] = useState(false);
+
   return (
     <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
       <View style={styles.container}>
@@ -38,7 +39,7 @@ const SignUp = () => {
             </Text>
           </View>
         </View>
-        <Button style={styles.button} title="Sign up" />
+        <Button onPress={googleOnPress} style={styles.button} title="Sign up" />
         <Separator text="or sign up with" />
         <GoogleLogin />
       </View>

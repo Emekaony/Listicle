@@ -17,8 +17,11 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: colors.darkGrey,
     borderRadius: 14,
-    width: "40%",
+    width: "45%",
     alignSelf: "center",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: 16,
   },
   imageStyle: {
     width: 30,
